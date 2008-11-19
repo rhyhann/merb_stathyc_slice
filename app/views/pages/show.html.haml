@@ -1,0 +1,9 @@
+#something
+  %h3= @page.name
+  %p= @page.description
+  %p= @page.content
+- throw_content :for_cud do
+  %h3= @page.name
+  %ul
+    %li= link_to 'Edit',  url(:edit_page,  @page) 
+    %li= link_to 'Back', url(:pages)

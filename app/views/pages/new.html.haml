@@ -1,0 +1,5 @@
+= error_messages_for :page
+= form_for(@page, :action => url(:pages) ) do
+  %p
+    = sexify @page
+    = submit "Create"

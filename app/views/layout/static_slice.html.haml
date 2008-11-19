@@ -1,0 +1,27 @@
+!!! XML
+!!! Strict
+%html{ html_attrs('fr') }
+  %head
+    %title
+      Web Design Victoria BC
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }/
+    = css_include_tag 'master'
+  %body
+    #menu-top
+      %ul
+        %li= link_to "Index", url(:pages)
+        = partial 'pages/sidebar', :with => Page.all
+    #wrapper-header
+      #header
+        #wrapper-header2
+          #wrapper-header3
+            %h1= @page.nil? ? "Static Pages" : @page.name
+    #wrapper-content
+      #wrapper-menu-page
+        #menu-page
+          = catch_content :for_cud
+      #content
+        %p= catch_content :for_layout
+    #wrapper-footer
+      #footer
+        %p= link_to "Design by 7designs", "http://studio7designs.com/"
