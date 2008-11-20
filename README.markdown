@@ -14,10 +14,12 @@ Installation
 ============
 
 * dependency (config/init.rb)
+
     \# add the slice as a regular dependency
     dependency 'static_slice'
 
 * router
+
     \# example: /static_slice/:controller/:action/:id
     add_slice(:StaticSlice)
     \# example: /foo/:controller/:action/:id
@@ -28,6 +30,7 @@ Installation
     slice(:StaticSlice)
 
 * rake
+
     rake slices:static_slice:install
 
 Uses
