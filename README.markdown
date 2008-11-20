@@ -14,25 +14,27 @@ Installation
 ============
 
 * dependency (config/init.rb)
-  > # add the slice as a regular dependency
-  > dependency 'static_slice'
+    # add the slice as a regular dependency
+    dependency 'static_slice'
+
 * router
-  > # example: /static_slice/:controller/:action/:id
-  > add_slice(:StaticSlice)
-  > # example: /foo/:controller/:action/:id
-  > add_slice(:StaticSlice, 'foo') # same as :path => 'foo'
-  > # example: /:lang/:controller/:action/:id
-  > add_slice(:StaticSlice, :path => ':lang')
-  > # example: /:controller/:action/:id
-  > slice(:StaticSlice)
+    # example: /static_slice/:controller/:action/:id
+    add_slice(:StaticSlice)
+    # example: /foo/:controller/:action/:id
+    add_slice(:StaticSlice, 'foo') # same as :path => 'foo'
+    # example: /:lang/:controller/:action/:id
+    add_slice(:StaticSlice, :path => ':lang')
+    # example: /:controller/:action/:id
+    slice(:StaticSlice)
+
 * rake
-  > rake slices:static_slice:install
+    rake slices:static_slice:install
 
 Uses
 ====
 
 You can put your overrides here:
-> host-app/slices/static_slice/app - controllers, models, views ...
+    host-app/slices/static_slice/app - controllers, models, views ...
 
 Templates are located in this order:
 1. host-app/slices/static_slice/app/views/*
