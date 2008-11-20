@@ -8,23 +8,23 @@ If you want to protect the CUD actions, you must know that: ALL of them are loca
 a content named *for_cud*. simple.
 
 To see all available tasks for StaticSlice run:
-> rake -T slices:static_slice
+    rake -T slices:static_slice
 
 Installation
 ============
 
 * dependency (config/init.rb)
-    # add the slice as a regular dependency
+    \# add the slice as a regular dependency
     dependency 'static_slice'
 
 * router
-    # example: /static_slice/:controller/:action/:id
+    \# example: /static_slice/:controller/:action/:id
     add_slice(:StaticSlice)
-    # example: /foo/:controller/:action/:id
+    \# example: /foo/:controller/:action/:id
     add_slice(:StaticSlice, 'foo') # same as :path => 'foo'
-    # example: /:lang/:controller/:action/:id
+    \# example: /:lang/:controller/:action/:id
     add_slice(:StaticSlice, :path => ':lang')
-    # example: /:controller/:action/:id
+    \# example: /:controller/:action/:id
     slice(:StaticSlice)
 
 * rake
@@ -44,7 +44,7 @@ Templates are located in this order:
 You can use the host application's layout by configuring the
 static_slice slice in a before_app_loads block:
 
-Merb::Slices.config[:static_slice] = { :layout => :application }
+    Merb::Slices.config[:static_slice] = { :layout => :application }
 
 By default :static_slice is used. If you need to override
 stylesheets or javascripts, just specify your own files in your layout
@@ -86,4 +86,4 @@ and other runtime code from within the host application.
 
 To create your own Slice run this (somewhere outside of your merb app):
 
-$ merb-gen slice <your-lowercase-slice-name>
+    merb-gen slice <your-lowercase-slice-name>
