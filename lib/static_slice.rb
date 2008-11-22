@@ -22,7 +22,7 @@ if defined?(Merb::Plugins)
     
     # Slice metadata
     self.description = "StathycSlice provides core static pages functionnalities, with CUD operations separated, so you can easily protect your app."
-    self.version = "1"
+    self.version = "0.1"
     self.author = "(rhyhann, Othmane Benkirane)"
     
     # Stub classes loaded hook - runs before LoadClasses BootLoader

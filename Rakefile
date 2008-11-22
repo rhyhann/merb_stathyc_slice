@@ -9,7 +9,7 @@ AUTHOR = "Othmane Benkirane (rhyhann)"
 EMAIL = "eo-in-rhyhann-net"
 HOMEPAGE = "http://github.com/rhyhann/merb-stathyc_slice"
 SUMMARY = "Merb Slice that provides core static pages functionnalities"
-GEM_VERSION = "1"
+GEM_VERSION = "0.1"
 
 spec = Gem::Specification.new do |s|
   s.rubyforge_project = 'merb'
