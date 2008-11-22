@@ -21,9 +21,9 @@ if defined?(Merb::Plugins)
   module StaticSlice
     
     # Slice metadata
-    self.description = "StaticSlice is a chunky Merb slice!"
-    self.version = "0.0.1"
-    self.author = "Engine Yard"
+    self.description = "StathycSlice provides core static pages functionnalities, with CUD operations separated, so you can easily protect your app."
+    self.version = "1"
+    self.author = "(rhyhann, Othmane Benkirane)"
     
     # Stub classes loaded hook - runs before LoadClasses BootLoader
     # right after a slice's classes have been loaded internally.

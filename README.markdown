@@ -1,3 +1,7 @@
+/!\ My versions numbers mean that they are stable when they are pair (2,4,6,8…) and
+    nearly bugfree when they finish with a 0 (10,20,30) so if you see version 1, just know
+    that it's not meant for production now!
+
 StaticSlice
 ===========
 
