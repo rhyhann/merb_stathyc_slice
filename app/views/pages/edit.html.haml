@@ -3,10 +3,4 @@
   %p
     = sexify @page
     = submit "Update"
-- throw_content :for_cud do
-  = catch_content :for_cud
-  %h3= @page.name
-  %ul
-    %li= link_to 'Show', url(:page, @page)
-    %li= link_to 'Edit', url(:edit_page,  @page)
-    %li= link_to 'Delete', url(:delete_page, @page)
+= partial 'cud', :with => @page

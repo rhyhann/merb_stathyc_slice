@@ -1,4 +1,4 @@
-/!\ My versions numbers mean that they are stable when they are pair (2,4,6,8…) and
+/!\ My version numbers mean that they are stable when they are pair (2,4,6,8…) and
     nearly bugfree when they finish with a 0 (10,20,30) so if you see version 1, just know
     that it's not meant for production now!
 
@@ -10,6 +10,8 @@ Just see the views for edit.
 
 If you want to protect the CUD actions, you must know that: ALL of them are located in
 a content named *for_cud*. simple.
+If you want to change the look of the CUD operations, it's stored in a partial named *_cud*.
+But _please see the default one first_.
 
 To see all available tasks for StaticSlice run:
     rake -T slices:static_slice

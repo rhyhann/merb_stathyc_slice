@@ -20,8 +20,8 @@
 # application, which in turn can override or finetune the slice implementation
 # code and views.
 #
-merb_gems_version = "1.0"
-dm_gems_version   = "0.9.6"
+merb_gems_version = "1.0.1"
+dm_gems_version   = "0.9.7"
 
 # Uncomment the following two lines to develop with haml instead of erb.
 # dependency "merb-haml", merb_gems_version
