@@ -8,13 +8,21 @@ StaticSlice
 A slice for the Merb framework that provides the core static pages functionnalities.
 Just see the views for edit.
 
+To see all available tasks for StaticSlice run:
+    rake -T slices:static_slice
+
+CUD Customization
+-----------------
+
 If you want to protect the CUD actions, you must know that: ALL of them are located in
 a content named *for_cud*. simple.
 If you want to change the look of the CUD operations, it's stored in a partial named *_cud*.
 But _please see the default one first_.
 
-To see all available tasks for StaticSlice run:
-    rake -T slices:static_slice
+Sidebar
+-------
+
+A partial called *_sidebar* may help you with Sidebar customization.
 
 Installation
 ============
